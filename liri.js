@@ -1,16 +1,14 @@
 require("dotenv").config();
 
-const keys = require("./keys.js");
-
-const axios = require("axios");
 const fs = require("fs");
-
-let spotify = new Spotify(keys.spotify);
-var Spotify = require("node-spotify-api");
-var Spotify = process.env.SPOTIFY_ID;
-
+const axios = require("axios");
 const moment = require("moment");
+const Spotify = require("node-spotify-api");
 
+const keys = require("./keys.js");
+let spotify = new Spotify(keys.spotify);
+
+var Spotify = process.env.SPOTIFY_ID;
 let command = process.argv[2];
 let search = process.argv[3];
 
@@ -146,6 +144,7 @@ function movieThis (movieTitle) {
 
             if (jsonData.Title != undefined) {
                 console.log(`
+                *********************************************
                 Title: ${title}
                 Release Year: ${year}
                 IMDb Rating: ${imdbRating}
@@ -154,6 +153,7 @@ function movieThis (movieTitle) {
                 Language: ${language}
                 Plot: ${plot}
                 Cast: ${cast}
+                ************************************************
                 `)
             } else {
                 console.log("If you haven't watch 'Mr. Nobody', then you should.  Unfortunately, it's not on Netflix!!")
