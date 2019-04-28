@@ -5,34 +5,35 @@ const keys = require("./keys.js");
 const axios = require("axios");
 const fs = require("fs");
 
-let spotify = new spotify(keys.spotify);
-var spotify = require("node-spotify-api");
+let spotify = new Spotify(keys.spotify);
+var Spotify = require("node-spotify-api");
+var Spotify = process.env.SPOTIFY_ID;
 
 const moment = require("moment");
 
 let command = process.argv[2];
-let searchTerm = process.argv[3];
+let search = process.argv[3];
 
-    switch(command){
+switch(command){
 
-        case "concert-this":
-            concertThis(searchTerm);
-            break;
+    case "concert-this":
+        concertThis(search);
+        break;
     
-        case "spotify-this-song":
-            spotifyThis(searchTerm);
-            break;
+    case "spotify-this-song":
+        spotifyThis(search);
+        break;
     
-        case "movie-this":
-            movieThis(searchTerm);
-            break;
+    case "movie-this":
+        movieThis(search);
+        break;
             
-        case "do-what-it-says":
-            doThis(searchTerm);
-            break;
+    case "do-what-it-says":
+        doThis(search);
+        break;
     
-        default:
-            console.log("Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says}");
+    default:
+        console.log("Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says}");
         }
 
 function storeAndDisplayData(formatted) {
