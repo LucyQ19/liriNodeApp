@@ -2,11 +2,11 @@
 
 ### About the App:
 
-LIRI (Lanaguage Interpretations and Recognition Interface) is a command line node app that takes in user inputs given specific parameters and gives back data.  The user has the options of using these four commands:
+LIRI (Lanaguage Interpretations and Recognition Interface) is a command line node app that takes in user inputs given specific command and gives back data.  The user has the options of using these four commands along with his/her own inputs:
 
-* concert-this
-* spotify-this-song
-* movie-this
+* concert-this <"artist/band name here">
+* spotify-this-song <"song name here">
+* movie-this <"movie name here">
 * do-what-it-says
 
 ### How to Use LIRI:

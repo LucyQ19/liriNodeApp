@@ -14,137 +14,166 @@ const moment = require("moment");
 let command = process.argv[2];
 let search = process.argv[3];
 
+fs.appendFile("log.txt", command + ",", function(err){
+    if(err) throw err
+        });
+
 switch(command){
 
     case "concert-this":
         concertThis(search);
         break;
-    
+            
     case "spotify-this-song":
         spotifyThis(search);
         break;
-    
+            
     case "movie-this":
         movieThis(search);
         break;
-            
+                    
     case "do-what-it-says":
         doThis(search);
         break;
-    
+            
     default:
         console.log("Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says}");
-        }
-
-function storeAndDisplayData(formatted) {
-    const divider = "\n----------------------------------------------------------\n\n";
-
-    return new Promise((resolve, reject)=>{
-        fs.appendFile("log.txt", formatted + divider, function(err){
-            if(err) return reject(err);
-
-            console.log(formatted);
-            resolve();
-        })
-    })
-}
+    }
 
 function concertThis(artistName) {
 
-        var URL = `https://rest.bandsintown.com/artist/${artistName}/events?app_id=codingbootcamp`;
+        let URL = `https://rest.bandsintown.com/artist/${artistName}/events?app_id=codingbootcamp`;
 
         axios.get(URL).then((response) => {
-             
-            const jsonData = response.data;
 
-            const showConcertData = [
-                "Venue Name: " + jsonData[0].venue.name,
-                "Venue Location: " + jsonData[0].venue.city + " , " + jsonData[0].venue.region,
-                "Date and Time: " + moment(jsonData.datetime).format("LLL")
-            ].join("\n\n");
+            let jsonData = response.data;
 
-            return showConcertData;
-        }).then(data => {
-            return storeAndDisplayData(data);
-        }).catch(err => {
-            console.log(err);
-        });
-    }
+            let venueName  = jsonData[0].venue.name;
+            let venueLocation = jsonData[0].venue.city + ", " + jsonData[0].venue.region;
+            let dateTime = moment(jsonData[0].datetime).format("LLL");
+
+            if (jsonData[0].venue != undefined) {
+                console.log(`
+                *********************************
+                Venue Name: ${venueName}
+                Venuen Location: ${venueLocation}
+                Date and Time: ${dateTime}
+                *********************************
+                `
+                )
+            } else {
+                console.log ("No results found.");
+            }
+    }).catch(err =>{
+        console.log(err);
+    });
+}
 
 function spotifyThis(song) {
 
     spotify.search({ type: 'track', query: song })
         .then((response) => {
-            const jsonData = response.tracks.items;
 
-            const showSongData = [
-                "Artist: " + jsonData[0].artist[0].name,
-                "Tracks: " + jsonData[0].name,
-                "Preview URL: " + jsonData[0].preview_url,
-                "Album: " + jsonData[0].album.name  
-            ].join("\n\n");
+            let jsonData = response.tracks.items;
 
-            return showSongData;
+            let artist = jsonData[0].artist[0].name;
+            let track = jsonData[0].name;
+            let previewURL = jsonData[0].preview_url;
+            let album = jsonData[0].album.name;
 
-        }).then(data => {
-            return storeAndDisplayData();
+            if (response.tracks.total === 0 ) {
+                defaultSpotifySong()
 
-        }).catch(function(err) {
+            } else {
+                console.log(`
+                ****************************
+                Artist: ${artist}
+                Track: ${track}
+                Preview URL: ${previewURL}
+                Album: ${album}
+                *****************************
+                `)
+            }
+        }).catch(err =>{
+            console.log(err);
+            console.log("No results found! Showing results for 'The Sign' by Ace of Base!");
+        });
+}
+
+function defaultSpotifySong() {
+    spotify.search({ type: 'track', query: 'The Sign'})
+    .then((response) => {
+
+        let jsonData = response.tracks.items;
+
+        let artist = jsonData[0].artist[0].name;
+        let track = jsonData[0].name;
+        let previewURL = jsonData[0].preview_url;
+        let album = jsonData[0].album.name;
+
+        for (var i = 0; i < jsonData.length; i++) {
+            if (jsonData[i].artist[0].name === "Ace of Base") {
+                console.log(`
+                ******************************
+                Artist: ${artist}
+                Track: ${track}
+                Preview URL: ${previewURL}
+                Album: ${album}
+                ******************************
+                `)
+            }
+        }
+    }) .catch(err =>{
         console.log(err);
-  });
-
+        console.log("No results found!");
+    });
 }
 
 function movieThis (movieTitle) {
-        const URL = `http://www.omdbapi.com/?t="${movieTitle}"&y=&plot=short&apikey=trilogy`;
+        let URL = `http://www.omdbapi.com/?t="${movieTitle}"&y=&plot=short&apikey=trilogy`;
         
         axios.get(URL).then((response) => {
-            const jsonData = response.data;
+            let jsonData = response.data;
 
-            const showMovieData = [
-                "Title: " + jsonData.Title,
-                "Release Year: " + jsonData.Year,
-                "IMDb Rating: " + jsonData.imdbRating,
-                "Rotten Tomatoes Rating: " + jsonData.tomatoUserRating,
-                "Country: " + jsonData.Country,
-                "Language: " + jsonData.Language,
-                "Plot: " + jsonData.Plot,
-                "Cast: " + jsonData.Actors,
-            ].join("\n\n");
+            let title = jsonData.Title;
+            let year = jsonData.Year;
+            let imdbRating = jsonData.imdbRating;
+            let rottenTomatoRating = jsonData.tomatoUserRating;
+            let country = jsonData.Country;
+            let language = jsonData.Language;
+            let plot = jsonData.Plot;
+            let cast = jsonData.Actors;
 
-            return showMovieData;
-        }).then(data => {
-            return storeAndDisplayData(data);
+            if (jsonData.Title != undefined) {
+                console.log(`
+                Title: ${title}
+                Release Year: ${year}
+                IMDb Rating: ${imdbRating}
+                Rotten Tomatoes Rating: ${rottenTomatoRating}
+                Country: ${country}
+                Language: ${language}
+                Plot: ${plot}
+                Cast: ${cast}
+                `)
+            } else {
+                console.log("If you haven't watch 'Mr. Nobody', then you should.  Unfortunately, it's not on Netflix!!")
+                movieThis("Mr.Nobody")
+            }
+
         }).catch(err =>{
             console.log(err);
+            console.log("No Results Found")
         });
     }
 
     function doThis() {
-        fs.readFile("random.txt", "utf8", function(error, data){
+        fs.readFile("random.txt", "utf8", function(err, data){
     
             var dataArray = data.split(" , ");
             console.log(dataArray);
-    
-            var randomCommand = dataArray[0];
-    
-            parameter = dataArray[1];
-    
-            switch(randomCommand) {
-                case "concert-this":
-                concertThis();
-        
-            case "spotify-this-song":
-                spotifyThis()
-        
-            case "movie-this":
-               movieThis();
-                break;
-                
-            case "do-what-it-says":
-                doThis();
-                break;
-    
+
+            if (err) {
+                console.log(err);
             }
         });
     }
