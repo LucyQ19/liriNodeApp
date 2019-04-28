@@ -51,9 +51,10 @@ function storeAndDisplayData(formatted) {
 
 function concertThis(artistName) {
 
-        const URL = `https://rest.bandsintown.com/artist/${artistName}/events?app_id=codingbootcamp`;
+        var URL = `https://rest.bandsintown.com/artist/${artistName}/events?app_id=codingbootcamp`;
 
         axios.get(URL).then((response) => {
+             
             const jsonData = response.data;
 
             const showConcertData = [
@@ -127,17 +128,17 @@ function movieThis (movieTitle) {
     
             var randomCommand = dataArray[0];
     
-            parameter = dataArragy[1];
+            parameter = dataArray[1];
     
             switch(randomCommand) {
                 case "concert-this":
                 concertThis();
         
             case "spotify-this-song":
-                spotifySong()
+                spotifyThis()
         
             case "movie-this":
-               omdbMovie();
+               movieThis();
                 break;
                 
             case "do-what-it-says":
