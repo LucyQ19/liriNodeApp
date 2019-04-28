@@ -8,7 +8,6 @@ const Spotify = require("node-spotify-api");
 const keys = require("./keys.js");
 let spotify = new Spotify(keys.spotify);
 
-var Spotify = process.env.SPOTIFY_ID;
 let command = process.argv[2];
 let search = process.argv[3];
 
@@ -35,7 +34,7 @@ switch(command){
         break;
             
     default:
-        console.log("Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says}");
+        console.log("Please enter a command: concert-this, spotify-this-song, movie-this, do-what-it-says");
     }
 
 function concertThis(artistName) {
