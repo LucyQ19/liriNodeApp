@@ -11,9 +11,19 @@ let spotify = new Spotify(keys.spotify);
 let command = process.argv[2];
 let search = process.argv[3];
 
-fs.appendFile("log.txt", command + ",", function(err){
-    if(err) throw err
-        });
+function storeAndDisplayData(formatted){
+    const divider = "\n----------------------------------------------------------------------\n\n";
+
+    return new Promise((resolve, reject)=> {
+        fs.appendFile("log.txt", formatted + divider, function(err){
+            if(err) return reject(err)
+
+            console.log(formatted);
+            resolve();
+                });
+    })
+}
+
 
 switch(command){
 
@@ -39,31 +49,27 @@ switch(command){
 
 function concertThis(artistName) {
 
-        let URL = `https://rest.bandsintown.com/artist/${artistName}/events?app_id=codingbootcamp`;
+        const URL = `https://rest.bandsintown.com/artists/${artistName}/events?app_id=codingbootcamp`;
 
         axios.get(URL).then((response) => {
 
-            let jsonData = response.data;
+            const jsonData = response.data;
 
-            let venueName  = jsonData[0].venue.name;
-            let venueLocation = jsonData[0].venue.city + ", " + jsonData[0].venue.region;
-            let dateTime = moment(jsonData[0].datetime).format("LLL");
+            const showData = [
+                "*****************************************************************************",
+                "Venue Name: " + jsonData[0].venue.name,
+                "Venue Location: " + jsonData[0].venue.city + ", " + jsonData[0].venue.country,
+                "Date and Time: " + moment(jsonData[0].datetime).format("LLL"),
+                "*****************************************************************************"
+            ].join("\n\n");
+            
+            return showData;
 
-            if (jsonData[0].venue != undefined) {
-                console.log(`
-                *********************************
-                Venue Name: ${venueName}
-                Venuen Location: ${venueLocation}
-                Date and Time: ${dateTime}
-                *********************************
-                `
-                )
-            } else {
-                console.log ("No results found.");
-            }
+    }).then(data=>{
+        return storeAndDisplayData(data);
     }).catch(err =>{
         console.log(err);
-    });
+     });
 }
 
 function spotifyThis(song) {
@@ -127,42 +133,30 @@ function defaultSpotifySong() {
 }
 
 function movieThis (movieTitle) {
-        let URL = `http://www.omdbapi.com/?t="${movieTitle}"&y=&plot=short&apikey=trilogy`;
+        const URL = `http://www.omdbapi.com/?t="${movieTitle}"&y=&plot=short&apikey=trilogy`;
         
         axios.get(URL).then((response) => {
-            let jsonData = response.data;
+            const jsonData = response.data;
 
-            let title = jsonData.Title;
-            let year = jsonData.Year;
-            let imdbRating = jsonData.imdbRating;
-            let rottenTomatoRating = jsonData.tomatoUserRating;
-            let country = jsonData.Country;
-            let language = jsonData.Language;
-            let plot = jsonData.Plot;
-            let cast = jsonData.Actors;
+            const showData = [
+                "*****************************************************************************",
+                "Title: " + jsonData.Title,
+                "Year: " + jsonData.Year,
+                "IMDb Rating: " + jsonData.imdbRating,
+                "Country: " + jsonData.Country,
+                "Language: " + jsonData.Language,
+                "Plot: " + jsonData.Plot,
+                "Cast: " + jsonData.Actors,
+                "*****************************************************************************"
+            ].join("\n\n");
 
-            if (jsonData.Title != undefined) {
-                console.log(`
-                *********************************************
-                Title: ${title}
-                Release Year: ${year}
-                IMDb Rating: ${imdbRating}
-                Rotten Tomatoes Rating: ${rottenTomatoRating}
-                Country: ${country}
-                Language: ${language}
-                Plot: ${plot}
-                Cast: ${cast}
-                ************************************************
-                `)
-            } else {
-                console.log("If you haven't watch 'Mr. Nobody', then you should.  Unfortunately, it's not on Netflix!!")
-                movieThis("Mr.Nobody")
-            }
+            return showData;
 
+        }).then(data=>{
+            return storeAndDisplayData(data);
         }).catch(err =>{
             console.log(err);
-            console.log("No Results Found")
-        });
+         });
     }
 
     function doThis() {
