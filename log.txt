@@ -1,18 +1,3 @@
-undefined,concert-this,concert-this,undefined,movie-this,movie-this,shrek,shrek,movie-this,spotify-this,spotify-this-song,undefined,movie-this,Title: Shrek
-
-Year: 2001
-
-IMDb Rating: 7.9
-
-Country: USA
-
-Language: English
-
-Plot: A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.
-
-Cast: Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow
-----------------------------------------------------------------------
-
 Title: Shrek
 
 Year: 2001
@@ -28,83 +13,19 @@ Plot: A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who 
 Cast: Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow
 ----------------------------------------------------------------------
 
-Title: Shrek
+Venue Name: SWG3 Studio Warehouse
 
-Year: 2001
+Venue Location: Glasgow, United Kingdom
 
-IMDb Rating: 7.9
-
-Country: USA
-
-Language: English
-
-Plot: A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.
-
-Cast: Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow
+Date and Time: May 10, 2019 10:00 PM
 ----------------------------------------------------------------------
 
-Title: Shrek
+Artist(s): Britney Spears
 
-Year: 2001
+Song: Toxic
 
-IMDb Rating: 7.9
+Album: In The Zone
 
-Rotten Tomato Rating: undefined
-
-Country: USA
-
-Language: English
-
-Plot: A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.
-
-Cast: Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow
-----------------------------------------------------------------------
-
-Title: Undefined
-
-Year: 2006
-
-IMDb Rating: 6.5
-
-Country: USA
-
-Language: English
-
-Plot: An unfortunate accident sets in motion a path of change for Nathanial Cane as he attempts to recover from substance abuse. A mentally unstable psychiatrist, DR. Henry Calhoon is tipping ...
-
-Cast: Ralph Cooley, Phillip Enriquez, Gregory Labenz, Amy MacDonald
-----------------------------------------------------------------------
-
-Title: Undefined
-
-Year: 2006
-
-IMDb Rating: 6.5
-
-Country: USA
-
-Language: English
-
-Plot: An unfortunate accident sets in motion a path of change for Nathanial Cane as he attempts to recover from substance abuse. A mentally unstable psychiatrist, DR. Henry Calhoon is tipping ...
-
-Cast: Ralph Cooley, Phillip Enriquez, Gregory Labenz, Amy MacDonald
-----------------------------------------------------------------------
-
-Venue Name: Tipitina's Uptown
-
-Venue Location: New Orleans, United States
-
-Date and Time: July 5, 2019 10:00 PM
-----------------------------------------------------------------------
-
-*****************************************************************************
-
-Venue Name: Tipitina's Uptown
-
-Venue Location: New Orleans, United States
-
-Date and Time: July 5, 2019 10:00 PM
-
-*****************************************************************************
+Preview Link: https://p.scdn.co/mp3-preview/8465386fd6ce10f7ae3bd9c907825d7cb955ade0?cid=0be16e60d218403ba4a97a691a16d39c
 ----------------------------------------------------------------------
 
