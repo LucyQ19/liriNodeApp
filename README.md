@@ -11,9 +11,16 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 ### How to Use LIRI:
 
-1. Open to your terminal such as Bash.
+1. Open your terminal such as Bash.
 2. Navigate to the liri-node-app folder that contains the liri.js file.
 3. Type one of the four commands in your terminal.  
-4. The system will display list of results based on your command and specific input.
+4. The system will display your results based on your command and specific input, and then updates the log.txt file with your latest results.
+
+### concert-this 
+
+![Image of concert-this]
+
+(./images/concertThis)
+
 
 ### Thanks for visiting my github!

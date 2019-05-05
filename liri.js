@@ -13,7 +13,7 @@ let command = process.argv[2];
 let searchTerm = process.argv[3];
 
 function storeAndDisplayData(formatted){
-    const divider = "\n----------------------------------------------------------------------\n\n";
+    const divider = "\n----------------------------------------------------------------------------------------------------------------------------\n\n";
 
     return new Promise((resolve, reject)=> {
         fs.appendFile("log.txt", formatted + divider, function(err){
@@ -24,7 +24,6 @@ function storeAndDisplayData(formatted){
                 });
     })
 }
-
 
 switch(command){
 
@@ -52,7 +51,7 @@ switch(command){
         break;
             
     default:
-        console.log("Please enter a command: \n node liri.js concert-this, \n node liri.js spotify-this-song, \n node liri.js movie-this, \n node liri.js do-what-it-says");
+        console.log("\nPlease enter a command: \n\n node liri.js concert-this, \n node liri.js spotify-this-song, \n node liri.js movie-this, \n node liri.js do-what-it-says\n");
     }
 
 function concertThis(artistName) {
@@ -64,7 +63,8 @@ function concertThis(artistName) {
             let jsonData = response.data;
 
             let showData = [
-               
+
+               "Artist: " + artistName,
                 "Venue Name: " + jsonData[0].venue.name,
                 "Venue Location: " + jsonData[0].venue.city + ", " + jsonData[0].venue.country,
                 "Date and Time: " + moment(jsonData[0].datetime).format("LLL"),
