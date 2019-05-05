@@ -18,9 +18,7 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 ### concert-this 
 
-![Image of concert-this]
-
-(./images/concertThis)
+![Image of concert-this](/images/concertThis)
 
 
 ### Thanks for visiting my github!
