@@ -26,7 +26,6 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 ### spotify-this-song
 
-### do-what-it-says
-
+![Image of spotify-this-song](./images/spotifyThisSong.png)
 
 ### Thanks for visiting my github!
