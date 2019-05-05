@@ -81,3 +81,17 @@ Plot: Five siblings are left alone all summer when their mom leaves town and the
 Cast: Christina Applegate, Joanna Cassidy, John Getz, Josh Charles
 ----------------------------------------------------------------------------------------------------------------------------
 
+Title: Good Will Hunting
+
+Year: 1997
+
+IMDb Rating: 8.3
+
+Country: USA
+
+Language: English
+
+Plot: Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.
+
+Cast: Matt Damon, Ben Affleck, Stellan Skarsgård, John Mighton
+----------------------------------------------------------------------------------------------------------------------------

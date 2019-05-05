@@ -10,7 +10,7 @@ const Spotify = require("node-spotify-api");
 let spotify = new Spotify(keys.spotify);
 
 let command = process.argv[2];
-let searchTerm = process.argv[3];
+let searchTerm = process.argv.slice(3).join(" ");
 
 function storeAndDisplayData(formatted){
     const divider = "\n----------------------------------------------------------------------------------------------------------------------------\n\n";
