@@ -29,19 +29,26 @@ function storeAndDisplayData(formatted){
 switch(command){
 
     case "concert-this":
-        concertThis(searchTerm);
+        if(searchTerm) {
+            concertThis(searchTerm);
+        } else concertThis("the black keys");
+        
         break;
             
     case "spotify-this-song":
-        spotifyThis(searchTerm);
+        if(searchTerm) {
+            spotifyThis(searchTerm)
+        } else spotifyThis("human behavior");
         break;
             
     case "movie-this":
-        movieThis(searchTerm);
+        if(searchTerm) {
+            movieThis(searchTerm);             
+        } else movieThis("don't tell mom the babysitter's dead");
         break;
                     
     case "do-what-it-says":
-        doThis(searchTerm);
+        doThis();
         break;
             
     default:
