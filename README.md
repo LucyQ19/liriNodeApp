@@ -9,13 +9,6 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 * movie-this <"movie name here">
 * do-what-it-says
 
-### How to Use LIRI:
-
-1. Open your terminal such as Bash.
-2. Navigate to the liri-node-app folder that contains the liri.js file.
-3. Type one of the four commands in your terminal.  
-4. The system will display your results based on your command and specific input, and then updates the log.txt file with your latest results.
-
 ### concert-this 
 
 ![Image of concert-this](./images/concertThis.png)
@@ -28,4 +21,13 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 ![Image of spotify-this-song](./images/spotifyThisSong.png)
 
+### How to Use LIRI:
+
+1. Open your terminal such as Bash.
+2. Navigate to the liri-node-app folder that contains the liri.js file.
+3. Type one of the four commands in your terminal.  
+4. The system will display your results based on your command and specific input, and then updates the log.txt file with your latest results.
+
 ### Thanks for visiting my github!
+
+Enjoy looking at my liri-node-app here: https://lucyq19.github.io/liri-node-app/

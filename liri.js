@@ -30,20 +30,20 @@ switch(command){
     case "concert-this":
         if(searchTerm) {
             concertThis(searchTerm);
-        } else concertThis("the black keys");
+        } else concertThis("Kacey Musgraves");
         
         break;
             
     case "spotify-this-song":
         if(searchTerm) {
             spotifyThis(searchTerm)
-        } else spotifyThis("human behavior");
+        } else spotifyThis("Human Behavior");
         break;
             
     case "movie-this":
         if(searchTerm) {
             movieThis(searchTerm);             
-        } else movieThis("don't tell mom the babysitter's dead");
+        } else movieThis("Don't Tell Mom the Babysitter's Dead");
         break;
                     
     case "do-what-it-says":
