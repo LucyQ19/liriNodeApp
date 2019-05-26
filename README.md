@@ -15,6 +15,8 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 #### concert-this 
 
+Type in the command: node liri.js The Black Keys
+
 ![Image of concert-this](./images/concertThis.png)
 
 #### movie-this
