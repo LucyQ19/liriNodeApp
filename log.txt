@@ -95,3 +95,45 @@ Plot: Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs h
 
 Cast: Matt Damon, Ben Affleck, Stellan Skarsgård, John Mighton
 ----------------------------------------------------------------------------------------------------------------------------
+Artist: kacey musgraves
+
+Venue Name: Oh, What a World: Tour
+
+Venue Location: Brisbane, Australia
+
+Date and Time: May 10, 2019 8:00 PM
+----------------------------------------------------------------------------------------------------------------------------
+
+Artist(s): Sublime
+
+Song: Caress Me Down
+
+Album: Sublime
+
+Preview Link: null
+----------------------------------------------------------------------------------------------------------------------------
+
+Title: The Bad News Bears
+
+Year: 1976
+
+IMDb Rating: 7.3
+
+Country: USA
+
+Language: English, Spanish
+
+Plot: An aging, down-on-his-luck ex-minor leaguer coaches a team of misfits in an ultra-competitive California little league.
+
+Cast: Walter Matthau, Tatum O'Neal, Vic Morrow, Joyce Van Patten
+----------------------------------------------------------------------------------------------------------------------------
+
+Artist(s): Backstreet Boys
+
+Song: I Want It That Way
+
+Album: The Hits--Chapter One
+
+Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=0be16e60d218403ba4a97a691a16d39c
+----------------------------------------------------------------------------------------------------------------------------
+

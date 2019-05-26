@@ -137,7 +137,9 @@ function movieThis (movieTitle) {
     function doThis() {
         fs.readFile("random.txt", "utf8", function(err, data){
     
-            var dataArray = data.split(" , ");
+            var dataArray = data.split(",");
+
+            spotifyThis(dataArray[1]); 
             console.log(dataArray);
 
             if (err) {
