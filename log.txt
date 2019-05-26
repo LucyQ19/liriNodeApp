@@ -137,3 +137,57 @@ Venue Location: Denver, United States
 Date and Time: September 23, 2019 7:00 PM
 ----------------------------------------------------------------------------------------------------------------------------
 
+Artist(s): Tori Amos
+
+Song: Cornflake Girl
+
+Album: Under the Pink
+
+Preview Link: https://p.scdn.co/mp3-preview/0283d831601ffc044f8935c12f55c6168d5006e5?cid=0be16e60d218403ba4a97a691a16d39c
+----------------------------------------------------------------------------------------------------------------------------
+
+Title: My Neighbor Totoro
+
+Year: 1988
+
+IMDb Rating: 8.2
+
+Country: Japan
+
+Language: Japanese
+
+Plot: When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.
+
+Cast: Noriko Hidaka, Chika Sakamoto, Shigesato Itoi, Sumi Shimamoto
+----------------------------------------------------------------------------------------------------------------------------
+
+Title: My Girl Friday
+
+Year: 2012
+
+IMDb Rating: N/A
+
+Country: USA
+
+Language: N/A
+
+Plot: N/A
+
+Cast: Vinny Chhibber, Justin Chrzanowski, Austin Herring, Kellee June Korpi
+----------------------------------------------------------------------------------------------------------------------------
+
+Title: Aladdin
+
+Year: 1992
+
+IMDb Rating: 8.0
+
+Country: USA
+
+Language: English
+
+Plot: A kindhearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.
+
+Cast: Scott Weinger, Robin Williams, Linda Larkin, Jonathan Freeman
+----------------------------------------------------------------------------------------------------------------------------
+

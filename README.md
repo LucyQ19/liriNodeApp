@@ -13,19 +13,21 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 3. Type one of the four commands in your terminal. 
 4. The system will display your results based on your command and specific input, and then updates the log.txt file with your latest results.
 
-#### concert-this 
+#### concert-this: 
 
-Type in the command: node liri.js The Black Keys
+Type in the command line: node liri.js concert-this The Black Keys
 
 ![Image of concert-this](./images/concertThis.png)
 
-#### movie-this
+#### spotify-this-song:
 
-![Image of movie-this](./images/movieThis.png)
-
-#### spotify-this-song
+Type in the command line: node liri.js spotify-this-song Cornflake Girl
 
 ![Image of spotify-this-song](./images/spotifyThisSong.png)
+
+#### movie-this:
+
+![Image of movie-this](./images/movieThis.png)
 
 
 ### Thanks for visiting my github!
