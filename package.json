@@ -1,7 +1,7 @@
 {
   "name": "liri-node-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "LIRI (Lanaguage Interpretations and Recognition Interface) is a command line node app that takes in user inputs given specific command and returns specific data back to the user.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

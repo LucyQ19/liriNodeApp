@@ -1,12 +1,26 @@
-# liri-node-app
+# lireNodeApp
 
-### About the App:
+### About this App:
 
 LIRI (Lanaguage Interpretations and Recognition Interface) is a command line node app that takes in user inputs given specific command and returns specific data back to the user.  The user has the options of using these four commands along with his/her own inputs:
 
  ![Image of four commands](./images/fourCommandsfortheCommandLine.png)
 
-### How to Use LIRI:
+ ### Packages and Technologes Used for this App:
+
+ * Node.js,
+ * Moment.js,
+ * Axios,
+ * fs,
+ * dotenv,
+ * Spotify API,
+ * BandsInTown API,
+ * and
+ * OMDB API
+
+### Local Environment Setup of this App:
+
+To use 
 
 1. Open your terminal such as Bash.
 2. Navigate to the liri-node-app folder that contains the liri.js file.
@@ -45,3 +59,5 @@ Then the results of your search appears in log.txt:
 
 
 ### Thanks for visiting my github!
+
+If you like this app, you may enjoy using more of my apps here: https://lucyq19.github.io/professionalPortfolio/
