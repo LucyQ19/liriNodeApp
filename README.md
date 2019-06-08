@@ -14,18 +14,18 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
  * fs,
  * dotenv,
  * Spotify API,
- * BandsInTown API,
- * and
+ * BandsInTown API, and
  * OMDB API
 
 ### Local Environment Setup of this App:
 
-To use 
+To use liriNodeApp from your local environment:
 
 1. Open your terminal such as Bash.
-2. Navigate to the liri-node-app folder that contains the liri.js file.
-3. Type one of the four commands in your terminal. 
-4. The system will display your results based on your command and specific input, and then updates the log.txt file with your latest results.
+2. Clone my repo using the command line.
+3. Change directory to the cloned repo.
+4. Install all required NPM packages.
+5. Start the application server by typing one of the four commands in your command line. 
 
 ### concert-this 
 
@@ -33,7 +33,7 @@ Type in the command line: node liri.js concert-this The Black Keys
 
 ![Image of concert-this](./images/concertThis.png)
 
-Then the results of your search appears in log.txt:
+Then the results of your search appears in the log.txt:
 
 ![Image of concert-this log](./images/concertThisLog.png)
 
@@ -43,7 +43,7 @@ Type in the command line: node liri.js spotify-this-song Cornflake Girl
 
 ![Image of spotify-this-song](./images/spotifyThisSong.png)
 
-Then the results of your search appears in log.txt:
+Then the results of your search appears in the log.txt:
 
 ![Image of spotify-this-song log](./images/spotifyThisSongLog.png)
 
