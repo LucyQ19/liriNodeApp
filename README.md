@@ -23,7 +23,7 @@ To use liriNodeApp from your local environment:
 
 1. Open your terminal such as Bash.
 2. Clone my repo using the command line.
-3. Change directory to the cloned repo.
+3. Change the directory to the cloned repo.
 4. Install all required NPM packages.
 5. Start the application server by typing one of the four commands in your command line. 
 
@@ -53,7 +53,7 @@ Type in the command line: node liri.js movie-this Aladdin
 
 ![Image of movie-this](./images/movieThis.png)
 
-Then the results of your search appears in log.txt:
+Then the results of your search appears in the log.txt:
 
 ![Image of movie-this log](./images/movieThisLog.png)
 
