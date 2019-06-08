@@ -29,7 +29,7 @@ To use liriNodeApp from your local environment:
 
 ### concert-this 
 
-Type in the command line: node liri.js concert-this The Black Keys
+Type in the command line: node liri.js concert-this The Black Keys:
 
 ![Image of concert-this](./images/concertThis.png)
 
@@ -39,7 +39,7 @@ Then the results of your search appears in the log.txt:
 
 ### spotify-this-song
 
-Type in the command line: node liri.js spotify-this-song Cornflake Girl
+Type in the command line: node liri.js spotify-this-song Cornflake Girl:
 
 ![Image of spotify-this-song](./images/spotifyThisSong.png)
 
@@ -49,7 +49,7 @@ Then the results of your search appears in the log.txt:
 
 ### movie-this
 
-Type in the command line: node liri.js movie-this Aladdin
+Type in the command line: node liri.js movie-this Aladdin:
 
 ![Image of movie-this](./images/movieThis.png)
 
