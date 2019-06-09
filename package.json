@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LucyQ19/liri-node-app.git"
+    "url": "git+https://github.com/LucyQ19/liriNodeApp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LucyQ19/liri-node-app/issues"
+    "url": "https://github.com/LucyQ19/liriNodeApp/issues"
   },
-  "homepage": "https://github.com/LucyQ19/liri-node-app#readme",
+  "homepage": "https://github.com/LucyQ19/liriNodeApp#readme",
   "dependencies": {
     "axios": "^0.18.1",
     "dotenv": "^7.0.0",

@@ -25,7 +25,7 @@ To use liriNodeApp from your local environment:
 2. Clone my repo using the command line.
 3. Change the directory to the cloned repo.
 4. Install all required NPM packages.
-5. Start the application server by typing one of the four commands in your command line. 
+5. Start the application server on the command linen by typing node lire.js following one of the commands below.
 
 ### concert-this 
 
