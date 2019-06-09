@@ -13,7 +13,7 @@ let command = process.argv[2];
 let searchTerm = process.argv.slice(3).join(" ");
 
 function storeAndDisplayData(formatted){
-    const divider = "\n----------------------------------------------------------------------------------------------------------------------------\n\n";
+    const divider = "\n--------------------------------------------------------------------------------------------------------------------------------------------------------\n\n";
 
     return new Promise((resolve, reject)=> {
         fs.appendFile("log.txt", formatted + divider, function(err){
