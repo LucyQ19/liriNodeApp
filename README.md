@@ -21,11 +21,11 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 To use liriNodeApp from your local environment:
 
-1. Open your terminal such as Bash.
+1. Get API key for Spotify here: <https://developer.spotify.com/my-applications/#!/>
 2. Clone my repo using the command line.
 3. Change the directory to the cloned repo.
-4. Install all required NPM packages.
-5. Start the application server on the command linen by typing node lire.js following one of the commands below.
+4. Install all required NPM packages by typing npm install.
+5. Start the application server on the command line by typing node lire.js following one of the commands below.
 
 ### concert-this 
 
@@ -58,6 +58,6 @@ Then the results of your search appears in the log.txt:
 ![Image of movie-this log](./images/movieThisLog.png)
 
 
-### Thanks for visiting my github!
+### Thanks for visiting my GitHub!
 
 If you like this app, you may enjoy using more of my apps here: https://lucyq19.github.io/professionalPortfolio/
