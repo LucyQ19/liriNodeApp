@@ -21,7 +21,7 @@ LIRI (Lanaguage Interpretations and Recognition Interface) is a command line nod
 
 To use liriNodeApp from your local environment:
 
-1. Get API key for Spotify here: <https://developer.spotify.com/my-applications/#!/>
+1. Get an API key for Spotify here: <https://developer.spotify.com/my-applications/#!/> and create and .dotenv file.
 2. Clone my repo using the command line.
 3. Change the directory to the cloned repo.
 4. Install all required NPM packages by typing npm install.
