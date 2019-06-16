@@ -50,7 +50,7 @@ Then the result of your search appears in the log.txt:
 
 ### movie-this
 
-Type in the command line: node liri.js movie-this Aladdin.
+Type in the command line: node liri.js movie-this Annie.
 
 ![Image of movie-this](./images/movieThis.png)
 
