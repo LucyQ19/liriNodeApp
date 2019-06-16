@@ -24,13 +24,13 @@ To use liriNodeApp from your local environment:
 1. Get an API key for Spotify here: <https://developer.spotify.com/my-applications/#!/>.
 2. Clone my repo using the command line.
 3. Change the directory to the cloned repo.
-4. Create a dotenv file and put your Spotify's client ID and client secret passwordinto it.
+4. Create a dotenv file and put your Spotify's client ID and client secret password into it.
 4. Install all required NPM packages by typing npm install.
 5. Start the application server on the command line by typing node lire.js following one of the commands below.
 
 ### concert-this 
 
-Type in the command line: node liri.js concert-this The Black Keys.
+Type in the command line: node liri.js concert-this Kacey Musgraves.
 
 ![Image of concert-this](./images/concertThis.png)
 
@@ -40,7 +40,7 @@ Then the result of your search appears in the log.txt:
 
 ### spotify-this-song
 
-Type in the command line: node liri.js spotify-this-song Cornflake Girl.
+Type in the command line: node liri.js spotify-this-song Human Behavior.
 
 ![Image of spotify-this-song](./images/spotifyThisSong.png)
 

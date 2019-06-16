@@ -200,3 +200,72 @@ Venue Location: Telluride, United States
 Date and Time: June 23, 2019 7:00 PM
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Artist(s): Björk
+
+Song: Human Behavior - LPVersion
+
+Album: Greatest Hits
+
+Preview Link: https://p.scdn.co/mp3-preview/d3ef2ceeed9b0439a565f72646a0694738e0def4?cid=0be16e60d218403ba4a97a691a16d39c
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Title: Annie
+
+Year: 1982
+
+IMDb Rating: 6.5
+
+Country: USA
+
+Language: English
+
+Plot: A young orphan girl's adventures in finding a family that will take her.
+
+Cast: Albert Finney, Carol Burnett, Ann Reinking, Tim Curry
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Title: Don't Tell Mom the Babysitter's Dead
+
+Year: 1991
+
+IMDb Rating: 6.2
+
+Country: USA
+
+Language: English
+
+Plot: Five siblings are left alone all summer when their mom leaves town and the evil babysitter bites the dust.
+
+Cast: Christina Applegate, Joanna Cassidy, John Getz, Josh Charles
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Title: Annie
+
+Year: 1982
+
+IMDb Rating: 6.5
+
+Country: USA
+
+Language: English
+
+Plot: A young orphan girl's adventures in finding a family that will take her.
+
+Cast: Albert Finney, Carol Burnett, Ann Reinking, Tim Curry
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Title: Aladdin
+
+Year: 1992
+
+IMDb Rating: 8.0
+
+Country: USA
+
+Language: English
+
+Plot: A kindhearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.
+
+Cast: Scott Weinger, Robin Williams, Linda Larkin, Jonathan Freeman
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
